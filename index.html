@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovable - ИИ платформа для генерации кода</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- Анимированные частицы фона -->
+    <div class="particles-container"></div>
+    
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">💻 Lovable</span>
+                <div class="logo-glow"></div>
+                <button onclick="showAIStatus()" class="ai-status-btn" title="Статус AI сервисов">🤖 AI</button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#features" class="nav-link">Возможности</a></li>
+                <li><a href="#demo" class="nav-link">Демо</a></li>
+                <li><a href="#chat" class="nav-link">Чат</a></li>
+                <li><button class="nav-btn" onclick="showLogin()">Войти</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Новое</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Lovable</span>
+                    <br>ИИ платформа для генерации кода
+                </h1>
+                <p class="hero-description">
+                    AI платформа для генерации кода. Превращай идеи в готовые проекты за считаные минуты
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Пользователей</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Языков</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Точность</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="startFreeTrial()">
+                        <span>Начать бесплатно</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="btn-secondary" onclick="showDemo()">
+                        <span>Демо</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="window-title">main.js</span>
+                        <div class="window-controls">
+                            <span class="control-btn"></span>
+                            <span class="control-btn"></span>
+                            <span class="control-btn"></span>
+                        </div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-javascript">
+<span class="keyword">function</span> <span class="function">createLovable</span>() {
+    <span class="keyword">const</span> <span class="variable">ai</span> = <span class="string">'🤖'</span>;
+    <span class="keyword">const</span> <span class="variable">love</span> = <span class="string">'💖'</span>;
+    
+    <span class="keyword">return</span> <span class="string">`${ai} + ${love} = Код с любовью`</span>;
+}
+
+<span class="comment">// Lovable делает код лучше</span>
+<span class="keyword">const</span> <span class="variable">result</span> = <span class="function">createLovable</span>();
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- Возможности -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Возможности платформы</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>ИИ генерация кода</h3>
+                    <p>Создавайте код на любом языке программирования с помощью передовых ИИ алгоритмов</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Интерактивный чат</h3>
+                    <p>Общайтесь с ИИ в реальном времени для решения сложных задач</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Анализ кода</h3>
+                    <p>Получайте детальный анализ и рекомендации по улучшению вашего кода</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Быстрая работа</h3>
+                    <p>Мгновенная генерация и обработка кода без задержек</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Красивый код</h3>
+                    <p>Автоматическое форматирование и соблюдение стандартов</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Безопасность</h3>
+                    <p>Ваш код остается конфиденциальным и защищенным</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Демо секция -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2 class="section-title">Посмотрите, как это работает</h2>
+            <p class="demo-subtitle">От идеи до готового приложения за считанные минуты</p>
+            
+            <div class="demo-container">
+                <!-- Левая часть - Интерфейс ввода -->
+                <div class="demo-input-side">
+                    <div class="demo-step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <h3>Введите вашу идею</h3>
+                        <div class="demo-input-box">
+                            <div class="input-simulation">
+                                <span class="typing-cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <h3>ИИ анализирует запрос</h3>
+                        <div class="ai-thinking">
+                            <div class="thinking-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>Анализирую требования...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <h3>Генерация кода</h3>
+                        <div class="code-generation">
+                            <div class="code-lines">
+                                <div class="code-line">HTML структура... ✓</div>
+                                <div class="code-line">CSS стили... ✓</div>
+                                <div class="code-line">JavaScript логика... ✓</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Правая часть - Результат -->
+                <div class="demo-output-side">
+                    <div class="demo-phone">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="app-preview">
+                                    <div class="app-header">
+                                        <h4>Мое приложение</h4>
+                                    </div>
+                                    <div class="app-content">
+                                        <div class="success-animation">
+                                            <div class="check-mark">✓</div>
+                                        </div>
+                                        <p>Готово!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Эмоции пользователя -->
+                    <div class="user-emotions">
+                        <div class="emotion-avatar">
+                            <span class="emotion-face">😊</span>
+                        </div>
+                        <div class="emotion-text">
+                            <p>"Вау! Это работает!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Видео демонстрация -->
+            <div class="demo-video-section">
+                <h3>Полная демонстрация процесса</h3>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="play-button" onclick="playDemoVideo()">
+                            <span>▶</span>
+                        </div>
+                        <div class="video-preview">
+                            <div class="video-frame">
+                                <div class="video-timeline">
+                                    <div class="timeline-item active">
+                                        <span>💡</span>
+                                        <p>Идея</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span>🤖</span>
+                                        <p>ИИ анализ</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span>⚡</span>
+                                        <p>Генерация</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span>🎉</span>
+                                        <p>Готовый продукт</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <span>💰</span>
+                                        <p>Успех в бизнесе</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Результаты пользователей -->
+            <div class="demo-results">
+                <h3>Результаты наших пользователей</h3>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-icon">📈</div>
+                        <h4>+300% продаж</h4>
+                        <p>Интернет-магазин за 1 час</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">🚀</div>
+                        <h4>Стартап за день</h4>
+                        <p>MVP готов к запуску</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-icon">💼</div>
+                        <h4>10 новых клиентов</h4>
+                        <p>Лендинг привлек заказчиков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Чат интерфейс -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2 class="section-title">Попробуйте чат прямо сейчас</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>Привет! Я Lovable AI. Какой код вы хотите создать сегодня?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Опишите, какой код вам нужен..." class="chat-input">
+                    <button id="sendMessage" class="send-btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>💻 Lovable</h4>
+                    <p>ИИ платформа для генерации кода с любовью к деталям</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <ul>
+                        <li><a href="#features">Возможности</a></li>
+                        <li><a href="#chat">Чат</a></li>
+                        <li><a href="#pricing">Цены</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lovable. Создано с любовью ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Загружаем Socket.IO асинхронно после загрузки основного скрипта
+        window.addEventListener('load', function() {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.socket.io/4.7.2/socket.io.min.js';
+            script.onload = function() {
+                console.log('📦 Socket.IO загружен');
+                if (window.initializeWebSocket) {
+                    window.initializeWebSocket();
+                }
+            };
+            document.head.appendChild(script);
+        });
+    </script>
+</body>
+</html> 

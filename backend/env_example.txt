@@ -1,0 +1,24 @@
+# Пример файла .env для настройки AI сервисов
+# Скопируйте этот файл в .env и заполните своими ключами
+
+# GigaChat (Sber) API ключ
+# Получите на https://developers.sber.ru/portal/products/gigachat
+GIGACHAT_API_KEY=your_gigachat_api_key_here
+
+# Yandex GPT API ключ  
+# Получите на https://cloud.yandex.ru/docs/foundation-models/
+YANDEX_API_KEY=your_yandex_api_key_here
+
+# LocalAI настройки
+# URL вашего LocalAI сервера
+LOCALAI_URL=http://localhost:8080
+# Включить LocalAI (true/false)
+LOCALAI_ENABLED=false
+
+# AI сервис по умолчанию
+# Возможные значения: gigachat, yandex, localai
+DEFAULT_AI=gigachat
+
+# Дополнительные настройки
+FLASK_ENV=development
+FLASK_DEBUG=true
